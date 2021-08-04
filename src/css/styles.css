@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navbarrrr section */
+
+nav{
+    background:rgba(17, 17, 17, 0.653) ;
+    height: 10vh;
+    width: 100%;
+   z-index: 2;
+
+    
+}
+
+
+.navbar .element
+{
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar .element .logo img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+.navbar .element .urls a {
+text-decoration: none;
+color: #fff;
+padding: 0 10px;
+transition: .3s ease-in-out;
+font-weight: 300;
+text-transform: uppercase;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar .element .urls a:hover{
+    color: rgba(0, 228, 34, 0.904);
+    
+}
+/* End navbar */
+section{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:#111 ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+section .row{
+    position: relative;
+    top: -60%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 58px;
+    transform: rotate(-30deg);
+}
+.contacts a{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+
+}
+.contacts a:hover, .box .icon:hover
+{
+transition: 0s;
+color: #0f0;
+text-shadow: 0 0 120px #0f0;
+}
+section .row div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate1 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row div:nth-child(2){
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate1
+{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate2
+{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+
+
+
+section .row:nth-child(even) div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate3 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row:nth-child(even)  div:nth-child(2){
+    animation: animate4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate3
+{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes animate4
+{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+content
+{
+    top: 70%;
+   
+}
+content .details
+{
+
+background: linear-gradient(to right, #292e49ad, #53697687, #bbd2c5aa), url('../resources/images/wall2.jpg'); 
+background-size: cover;
+background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    box-sizing: border-box;
+}
+.circle
+{
+  
+    width: 290px;
+    height: 290px;
+    border-radius:50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    transition: 0.6s ease-in-out;
+}
+.circle img
+{
+    width: 290px;
+    
+   
+}
+.details .right
+{
+padding: 40px;
+font-family: 'Courgette', cursive;
+letter-spacing: 1px;
+
+}
+.details .right .contacts
+{
+    
+    font-size: 25px;
+    display: flex;
+}
+.details .right .contacts p
+{
+    padding: 10px;
+}
+.details .right .contacts a {
+text-decoration: none;
+}
+.circle:hover
+{
+ 
+    border-radius: 4%;
+    height: 400px;
+}
+
+.btn
+{
+    border-radius: 25px;
+    border: 2px solid rgb(221, 163, 2);
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    padding-top:8px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px ;
+    transition: .4s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-weight :bolder;
+}
+.btn:hover
+{
+    background:rgb(216, 159, 3) ;
+    cursor: pointer;
+}
+.projects
+{
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.projects h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.project_details .row1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0px;
+}
+.card
+{
+    
+    width: 300px;
+    height: 450px;
+    border-radius: 2%;
+overflow: hidden;
+margin: 20px ;
+box-shadow: 0px 0px 20px 5px rgba(0, 0, 255, .2);
+
+}
+.pr1 .image
+{
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.pr1 .image img
+{
+width: 300px;
+transition: .7s ease-in-out;
+}
+.pr1 .image:hover img
+{
+transform: scale(1.5);
+}
+.pr1  .pr_details
+{
+padding: 20px;
+}
+.pr1  .pr_details h2{
+    padding-bottom: 20px;
+}
+
+@media (max-width:566px)
+{
+    content .details
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    box-sizing: border-box;
+    }
+ .navbar .element
+{
+    height: 15vh;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: center;
+
+}
+.circle
+{
+  
+    width: 200px;
+    height: 200px;
+}
+.circle img
+{
+    width: 200px;
+    
+}
+nav 
+{
+    height: 20vh
+};
+.navbar .urls
+{
+padding:10px;
+}
+}
+
+@media (max-width:1066px)
+{
+    .project_details .row1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0px;
+}
+}
+
+
+
+
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.537)) , url('../resources/images/mm.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact .contact_content
+{
+    max-width: 800px;
+    text-align: center;
+
+}
+.contact .contact_content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.contact .contact_content p{
+    font-weight: 300px;
+    color:#fff;
+
+}
+.detailsc
+{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}   
+.detailsc .contactinfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.detailsc .contactinfo .box
+{
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.detailsc .contactinfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background:#fff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.detailsc .contactinfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:#fff;
+    flex-direction: column;
+}
+.detailsc .contactinfo .box .text h3
+{
+    font-weight: 700;
+    color: #00bcd4;
+}
+.contactForm
+{
+width: 26%;
+padding: 40px;
+background:rgba(90, 89, 89, 0.489);
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.contactForm .inputbox
+{
+    position: relative;
+    
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputbox input,
+.contactForm .inputbox textarea
+{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin:10px 0;
+border: none;
+background:rgba(90, 89, 89, 0.489);
+border-bottom: 2px solid rgba(51, 51, 51, 0.51);
+outline: none;
+resize: none;
+}
+.contactForm .inputbox span
+{
+    position: absolute;
+    left: 2%;
+padding: 5px 0;
+font-size: 16px;
+margin:10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: rgb(179, 176, 176);
+}
+.contactForm .inputbox input:focus ~ span,
+.contactForm .inputbox input:valid ~ span,
+.contactForm .inputbox textarea:focus ~ span,
+.contactForm .inputbox textarea:valid ~ span
+{
+    color: #ff0055;
+    font-size: 12px;
+    transform: translateY(-25px);
+
+}
+.contactForm .inputbox input[type="submit"]
+{
+    width: 100px;
+    margin: 12px 36%;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+@media(max-width:991px){
+    .contact{
+        padding: 150px 0px;
+    }
+    .detailsc{
+        flex-direction: column;
+    }
+    .detailsc .contactinfo
+    {
+        margin-bottom: 40px;
+    }
+    .detailsc .contactinfo,.contactForm{
+        width: 100%;
+    }
+    .contactForm h2{
+        text-align: center;
+    }
+}
+
+
+
+.My_Resume
+{
+    background:linear-gradient(rgba(0, 0, 0, 0.789),rgba(0, 0, 0, 0.891)) , url('../resources/images/wall3.jpg') no-repeat;
+    background-size:cover;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+.My_Resume .card2
+{
+    border-radius: 25px;
+width: 370px;
+height: 370px;
+background: #686869;
+box-sizing: border-box;
+
+box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.544);
+
+}
+.imagecard2
+{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height:270px;
+    overflow: hidden;
+}
+.imagecard2 img
+{
+width: 370px;
+}
+.card2 .buttons 
+{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.card2 .buttons .download, .view
+{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
